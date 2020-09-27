@@ -1,0 +1,47 @@
+{
+   "name": "json_to_html",
+   "version": "1.0.0",
+   "description": "This is a HTML parser,takes json object as input and converts it to html string",
+   "type": "module",
+   "main": "index.ts",
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/mayurtikundi12/SHUKSHMA.git"
+    },
+   "scripts": {
+      "start": "ts-node index.ts",
+      "dev": "nodemon --exec ts-node index.ts",
+      "build": "tsc -p .",
+      "test":  "mocha --timeout 15000 --require ts-node/register \"./{,!(node_modules)/**/}*.spec.ts\" --reporter mochawesome",
+      "localtest": "mocha --timeout 15000 --require ts-node/register \"./{,!(node_modules)/**/}*.spec.ts\" --reporter mochawesome",
+      "devtest": "nyc mocha --timeout 15000 --require ts-node/register \"./{,!(node_modules)/**/}*.spec.ts\" --watch --watch-files src, src/**/*.ts",
+      "coverage": "nyc npm run localtest"
+   },
+   "keywords": [
+      "library",
+      "JSON",
+      "html",
+      "parser",
+      "converter",
+      "dom"
+   ],
+   "author": {
+      "name": "Mayur Tikundi"
+   },
+   "license": "MIT",
+   "dependencies": {
+      "@types/chai": "^4.2.12",
+      "chai": "^4.2.0",
+      "mocha": "^8.1.3",
+      "string": "^3.3.3",
+      "voca": "^1.4.0"
+   },
+   "devDependencies": {
+      "@types/mocha": "^8.0.0",
+      "@types/node": "^8.0.29",
+      "mochawesome": "^6.1.1",
+      "nyc": "^15.1.0",
+      "ts-node": "^3.3.0",
+      "typescript": "^3.9.7"
+   }
+}
