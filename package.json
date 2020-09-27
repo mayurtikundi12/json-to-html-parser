@@ -1,5 +1,5 @@
 {
-   "name": "json_to_html",
+   "name": "json_html_parser",
    "version": "1.0.0",
    "description": "This is a HTML parser,takes json object as input and converts it to html string",
    "type": "module",
