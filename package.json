@@ -7,12 +7,12 @@
    "repository": {
       "type": "git",
       "url": "git+https://github.com/mayurtikundi12/SHUKSHMA.git"
-    },
+   },
    "scripts": {
       "start": "ts-node index.ts",
       "dev": "nodemon --exec ts-node index.ts",
       "build": "tsc -p .",
-      "test":  "mocha --timeout 15000 --require ts-node/register \"./{,!(node_modules)/**/}*.spec.ts\" --reporter mochawesome",
+      "test": "mocha --timeout 15000 --require ts-node/register \"./{,!(node_modules)/**/}*.spec.ts\" --reporter mochawesome",
       "localtest": "mocha --timeout 15000 --require ts-node/register \"./{,!(node_modules)/**/}*.spec.ts\" --reporter mochawesome",
       "devtest": "nyc mocha --timeout 15000 --require ts-node/register \"./{,!(node_modules)/**/}*.spec.ts\" --watch --watch-files src, src/**/*.ts",
       "coverage": "nyc npm run localtest"

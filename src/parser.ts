@@ -2,27 +2,26 @@ import {IHtmlJson} from './Ihtml_json'
 
 export class Parser{
 
-    private html_json :IHtmlJson;
+    private html_jsons :IHtmlJson[];
     private HTML_TEXT :string = "";
 
-    constructor(html_json:IHtmlJson){
-        this.html_json = html_json;
+    constructor(html_jsons:IHtmlJson[]){
+        this.html_jsons = html_jsons;
     }
 
-    parse(html_jsons:IHtmlJson[]){
+    parse(){
      /**
       * STEPS
       * 1. CREATE STARTING TAG AND SET ATTRIBUTES/STYLES TO THE TAG
       * 2. RECURSE THE FUNCTION 
       * 3. CLOSE TAG
       */ 
-        for (const html_json of html_jsons) {
+        for (const html_json of this.html_jsons) {
            if (html_json) {
             let resultantTag =  this.parseNode(html_json);
             this.HTML_TEXT += resultantTag;
            }
         }
-
         return this.HTML_TEXT ;
     }
 
