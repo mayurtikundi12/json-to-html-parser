@@ -6,7 +6,7 @@
    "main": "dist/index.js",
    "repository": {
       "type": "git",
-      "url": "git+https://github.com/mayurtikundi12/SHUKSHMA.git"
+      "url": "git+https://github.com/mayurtikundi12/json_html_parser.git"
    },
    "scripts": {
       "start": "ts-node index.ts",
