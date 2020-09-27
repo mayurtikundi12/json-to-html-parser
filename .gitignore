@@ -2,6 +2,7 @@
 .vscode/
 node_modules/
 build/
+dist/
 tmp/
 temp/
 mochawesome-report/
@@ -9,3 +10,4 @@ mochawesome-report/
 coverage/
 reports/
 .history
+*.tgz

@@ -1,6 +1,6 @@
 # This is a HTML parser,takes json object as input and converts it to html string.
 
-# The JSON object needs to be of type
+### The JSON object needs to be of type
 
 ```
 interface IHtmlJson{
@@ -52,4 +52,4 @@ interface IHtmlJson{
     */ <h2 style="color:blue;"  > This has the some less value in it.</h2> 
 ```
 
-## This project is part of [SHUKSHMA](https://github.com/mayurtikundi12/shukshma), it is a microservice framework, with automated code generation, please have a look and if possible give your reviews at mayurtikundi12@gmail.com .
+### This project is part of [SHUKSHMA](https://github.com/mayurtikundi12/shukshma), it is a microservice framework, with automated code generation, please have a look and if possible give your reviews at mayurtikundi12@gmail.com .
