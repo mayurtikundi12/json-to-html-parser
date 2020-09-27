@@ -1,6 +1,6 @@
 {
    "name": "json_html_parser",
-   "version": "1.0.0",
+   "version": "1.0.1",
    "description": "This is a HTML parser,takes json object as input and converts it to html string",
    "type": "module",
    "main": "index.ts",
